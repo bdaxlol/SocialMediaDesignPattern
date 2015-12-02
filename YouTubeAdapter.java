@@ -13,7 +13,9 @@ public class YouTubeAdapter implements SocialMediaEntry {
 
     @Override
     public String getPostText() {
-        return youTubeVideo.getTitle();
+
+        String titleAndDesc = youTubeVideo.getTitle() + ": " + youTubeVideo.getDescription();
+        return titleAndDesc;
     }
 
     @Override
